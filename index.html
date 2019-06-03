@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提示插件</title>
+	<style>
+
+	.Fmask{      
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background-color: rgba(0,0,0,.3);
+	    z-index: 500;	    
+	}
+	.FmaskCon {
+	    position: absolute;     
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	    margin:auto;             
+	    z-index:9999;
+	    background:#2f3030;
+	    border-radius:4px;
+	    width:100px;
+	    height:60px;
+	    line-height: 60px;
+	    color: #fff;
+	    text-align: center;
+	}
+
+
+		
+	</style>
+	
+</head>
+<body>
+	
+	<button onclick="do1()">模拟请求</button>
+	<script src="Fload.js"></script>
+	<script>
+		function do1(){
+			var a =new Fload({content:'加载..'});
+
+			window.setTimeout(function(){
+				a.clear();
+			}, 2000);
+
+		}
+
+
+        
+
+	</script>
+</body>
+</html>
